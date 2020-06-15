@@ -3,7 +3,7 @@ html { scroll-behavior: smooth; }
 
 #toctoc { width: 100%; margin-bottom: 3rem; }
 
-#toctoc .hidden { display: none; }
+#toctoc.hidden { display: none; }
 #toctoc a { text-decoration: none; }
 
 #toctoc #toctoc-head {
