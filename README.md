@@ -64,7 +64,7 @@ var options = {
 |-------------------------|--------------------------------------------------------------|-------------------------------------------------------------------------------------|-------------|
 | **headBackgroundColor** | This is the background color of the table of contents header | **String** - [CSS color](https://www.w3schools.com/colors/default.asp)              | *"#1c1c1c"* |
 | **headTextColor**       | This is the text color of the table of contents header       | **String** - [CSS color](https://www.w3schools.com/colors/default.asp)              | *"#fff"*    |
-| **headLinkColor**       | This is the link color of the table of contents header       | **String** - [CSS color](https://www.w3schools.com/colors/default.asp)              | *"#ADD8E6"* |
+| **headLinkColor**       | This is the link color of the table of contents header       | **String** - [CSS color](https://www.w3schools.com/colors/default.asp)              | *"#add8e6"* |
 | **bodyBackgroundColor** | This is the background color of the table of contents body   | **String** - [CSS color](https://www.w3schools.com/colors/default.asp)              | *"#f5f5f5"* |
 | **bodyLinkColor**       | This is the links color of the table of contents body        | **String** - [CSS color](https://www.w3schools.com/colors/default.asp)              | *"#000"*    |
 | **borderStyle**         | This is the border style of the table of contents container  | **String** - [CSS border-style](https://www.w3schools.com/css/css_border_sides.asp) | *"solid"*   |
