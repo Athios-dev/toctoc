@@ -32,7 +32,7 @@ $(document).ready(function() {
 });
 ```
 
-## Change the content
+## Global settings
 ```javascript
 var options = {
     minimized: false,
