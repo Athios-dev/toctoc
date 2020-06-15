@@ -17,7 +17,7 @@ Get the latest version of jQuery on [jquery.com](https://code.jquery.com).
 ### Call the plugin
 ```javascript
 $(document).ready(function() {
-  $.toctoc();
+    $.toctoc();
 });
 ```
 
@@ -25,58 +25,58 @@ $(document).ready(function() {
 You can also pass some informations to the plugin.
 ```javascript
 $(document).ready(function() {
-  var options = {
-    // Some options...
-  };
-  $.toctoc(options);
+    var options = {
+        // Some options...
+    };
+    $.toctoc(options);
 });
 ```
 
 ## Change the content
 ```javascript
 var options = {
-  minimized: true,
-  target: 'body'
+    minimized: false,
+    target: '#article'
 }
 ```
 
 | Option        | Description                                            | Type                       | Default |
 |---------------|--------------------------------------------------------|----------------------------|---------|
 | **minimized** | Define if the table of contents is open or not         | **Boolean**                | true    |
-| **target**    | Define in which container titles tag should be crawled | **String** - CSS selector  | 'body'  |
+| **target**    | Define in which container titles tag should be crawled | **String** - CSS selector  | "body"  |
 
 
 ## Change the style
 ```javascript
 var options = {
-  headBackgroundColor: '#e7e7e7',
-  headTextColor: '#000',
-  headLinkColor: '#2ecc71',
-  bodyBackgroundColor: '#f5f5f5',   
-  bodyLinkColor: '#f07915',
-  borderWidth: '5px',
-  borderColor: '#2ecc71',
-  borderStyle: 'dashed'
+    headBackgroundColor: '#e7e7e7',
+    headTextColor: '#000',
+    headLinkColor: '#2ecc71',
+    bodyBackgroundColor: '#f5f5f5',   
+    bodyLinkColor: '#f07915',
+    borderWidth: '5px',
+    borderColor: '#2ecc71',
+    borderStyle: 'dashed'
 }
 ```
 
 | Option                  | Description                                                  | Type                                                                                        | Default
 |-------------------------|--------------------------------------------------------------|---------------------------------------------------------------------------------------------|-----------|
-| **headBackgroundColor** | This is the background color of the table of contents header | **String** - CSS [color](https://developer.mozilla.org/fr/docs/Web/CSS/color)               | '#1c1c1c' |
-| **headTextColor**       | This is the text color of the table of contents header       | **String** - CSS [color](https://developer.mozilla.org/fr/docs/Web/CSS/color)               | '#fff'    |
-| **headLinkColor**       | This is the link color of the table of contents header       | **String** - CSS [color](https://developer.mozilla.org/fr/docs/Web/CSS/color)               | '#ADD8E6' |
-| **bodyBackgroundColor** | This is the background color of the table of contents body   | **String** - CSS [color](https://developer.mozilla.org/fr/docs/Web/CSS/color)               | '#f5f5f5' |
-| **bodyLinkColor**       | This is the links color of the table of contents body        | **String** - CSS [color](https://developer.mozilla.org/fr/docs/Web/CSS/color)               | '#000'    |
-| **borderStyle**         | This is the border style of the table of contents container  | **String** - CSS [border-style](https://developer.mozilla.org/fr/docs/Web/CSS/border-style) | 'solid'   |
-| **borderColor**         | This is the border color of the table of contents container  | **String** - CSS [border-color](https://developer.mozilla.org/fr/docs/Web/CSS/border-style) | '#000'    |
-| **borderWidth**         | This is the border width of the table of contents container  | **String** - CSS [border-width](https://developer.mozilla.org/fr/docs/Web/CSS/border-style) | '2px'     |
+| **headBackgroundColor** | This is the background color of the table of contents header | **String** - CSS [color](https://developer.mozilla.org/fr/docs/Web/CSS/color)               | "#1c1c1c" |
+| **headTextColor**       | This is the text color of the table of contents header       | **String** - CSS [color](https://developer.mozilla.org/fr/docs/Web/CSS/color)               | "#fff"    |
+| **headLinkColor**       | This is the link color of the table of contents header       | **String** - CSS [color](https://developer.mozilla.org/fr/docs/Web/CSS/color)               | "#ADD8E6" |
+| **bodyBackgroundColor** | This is the background color of the table of contents body   | **String** - CSS [color](https://developer.mozilla.org/fr/docs/Web/CSS/color)               | "#f5f5f5" |
+| **bodyLinkColor**       | This is the links color of the table of contents body        | **String** - CSS [color](https://developer.mozilla.org/fr/docs/Web/CSS/color)               | "#000"    |
+| **borderStyle**         | This is the border style of the table of contents container  | **String** - CSS [border-style](https://developer.mozilla.org/fr/docs/Web/CSS/border-style) | "solid"   |
+| **borderColor**         | This is the border color of the table of contents container  | **String** - CSS [border-color](https://developer.mozilla.org/fr/docs/Web/CSS/border-color) | "#000"    |
+| **borderWidth**         | This is the border width of the table of contents container  | **String** - CSS [border-width](https://developer.mozilla.org/fr/docs/Web/CSS/border-width) | "2px"     |
 
 
 ## Change the content
 ```javascript
 var options = {
-  headText: 'Table of contents',
-  headLinkText: ['show', 'hide']
+    headText: 'My title',
+    headLinkText: ['open', 'close']
 }
 ```
 
