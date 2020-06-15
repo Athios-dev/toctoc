@@ -6,17 +6,18 @@
       headTextColor: '#fff',
       headLinkColor: 'lightBlue',
       headText: 'Summary',
-      headShowLinkText: "show",
-      headHideLinkText: "hide",
+      headShowLinkText: 'show',
+      headHideLinkText: 'hide',
       bodyBackgroundColor: '#f5f5f5',
       bodyLinkColor: '#000',
-      borderWidth: "2px",
-      borderColor: "#000",
-      borderStyle: "solid",
-      close: true
+      borderWidth: '2px',
+      borderColor: '#000',
+      borderStyle: 'solid',
+      close: true,
+      target: 'body'
     }, options);
     
-    const container = $("#toctoc");
+    const container = $('#toctoc');
     const head = $("<div id='toctoc-head'></div>");
     const body = $("<div id='toctoc-body'></div>");
 
@@ -29,8 +30,8 @@
 
     function createToc() {
       head.append("<p><span>" + settings.headText + "</span> [<a href='#' id='toggle'></a>]</p>");
-
-      $("h2, h3, h4, h5, h6").each(function(i) {
+      let titles = settings.target + " h2, " + settings.target + " h3, " + settings.target + " h4, " + settings.target + " h5, " + settings.target + " h6";
+      $(titles).each(function(i) {
         let tag = $(this).prop('tagName').toLowerCase();
         let content = $(this).html();
         let anchor = 'toctoc-' + i;
@@ -55,19 +56,19 @@
         'border-color': settings.borderColor,
         'border-width': settings.borderWidth
       });
-      $("#toctoc-head a").css({ 'color': settings.headLinkColor });
+      $('#toctoc-head a').css({'color': settings.headLinkColor});
       $('#toctoc-body a').css({'color': settings.bodyLinkColor});
     }
     
     function toggleLink() {
       if (settings.close) {
         settings.close = false;
-        $("#toctoc-head a").text(settings.headShowLinkText);
-        body.addClass("hidden");
+        $('#toctoc-head a').text(settings.headShowLinkText);
+        body.addClass('hidden');
       } else {
         settings.close = true;
-        $("#toctoc-head a").text(settings.headHideLinkText);
-        body.removeClass("hidden");
+        $('#toctoc-head a').text(settings.headHideLinkText);
+        body.removeClass('hidden');
       }
     }
     
