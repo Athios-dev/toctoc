@@ -4,14 +4,14 @@
     var settings = $.extend({
       headBackgroundColor: '#1c1c1c',
       headTextColor: '#fff',
-      headLinkColor: 'lightBlue',
-      headText: 'Table of contents',
-      headLinkText: ['show', 'hide'],
+      headLinkColor: '#add8e6',
       bodyBackgroundColor: '#f5f5f5',
       bodyLinkColor: '#000',
-      borderWidth: '2px',
-      borderColor: '#000',
       borderStyle: 'solid',
+      borderColor: '#000',
+      borderWidth: '2px',
+      headText: 'Table of contents',
+      headLinkText: ['show', 'hide'],
       minimized: true,
       target: 'body'
     }, options);
