@@ -5,15 +5,14 @@
       headBackgroundColor: '#1c1c1c',
       headTextColor: '#fff',
       headLinkColor: 'lightBlue',
-      headText: 'Summary',
-      headShowLinkText: 'show',
-      headHideLinkText: 'hide',
+      headText: 'Table of contents',
+      headLinkText: ['show', 'hide'],
       bodyBackgroundColor: '#f5f5f5',
       bodyLinkColor: '#000',
       borderWidth: '2px',
       borderColor: '#000',
       borderStyle: 'solid',
-      close: true,
+      minimized: true,
       target: 'body'
     }, options);
     
@@ -61,13 +60,13 @@
     }
     
     function toggleLink() {
-      if (settings.close) {
-        settings.close = false;
-        $('#toctoc-head a').text(settings.headShowLinkText);
+      if (settings.minimized) {
+        settings.minimized = false;
+        $('#toctoc-head a').text(settings.headLinkText[0]);
         body.addClass('hidden');
       } else {
-        settings.close = true;
-        $('#toctoc-head a').text(settings.headHideLinkText);
+        settings.minimized = true;
+        $('#toctoc-head a').text(settings.headLinkText[1]);
         body.removeClass('hidden');
       }
     }
