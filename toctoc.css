@@ -2,8 +2,6 @@
 html { scroll-behavior: smooth; }
 
 #toctoc { width: 100%; margin-bottom: 3rem; }
-
-#toctoc.hidden { display: none; }
 #toctoc a { text-decoration: none; }
 
 #toctoc #toctoc-head {
@@ -16,6 +14,7 @@ html { scroll-behavior: smooth; }
 
 #toctoc #toctoc-body { padding: .5rem 1rem; font-size: 1rem; }
 #toctoc #toctoc-body .link { margin: .4rem 0; }
+#toctoc #toctoc-body.hidden { display: none; }
 
 #toctoc #toctoc-body a:hover { font-weight: bold; }
 #toctoc #toctoc-body .link-h3 { padding-left: 1rem; }
