@@ -40,10 +40,10 @@ var options = {
 }
 ```
 
-| Option        | Description                                            | Type                       | Default  |
-|---------------|--------------------------------------------------------|----------------------------|----------|
-| **minimized** | Define if the table of contents is open or not         | **Boolean**                | *true*   |
-| **target**    | Define in which container titles tag should be crawled | **String** - CSS selector  | *"body"* |
+| Option        | Description                                            | Type                                                                             | Default  |
+|---------------|--------------------------------------------------------|----------------------------------------------------------------------------------|----------|
+| **minimized** | Define if the table of contents is open or not         | **Boolean**                                                                      | *true*   |
+| **target**    | Define in which container titles tag should be crawled | **String** - [CSS selector](https://www.w3schools.com/cssref/css_selectors.asp)  | *"body"* |
 
 
 ## Change the style
@@ -60,16 +60,16 @@ var options = {
 }
 ```
 
-| Option                  | Description                                                  | Type                                                                                        | Default     |
-|-------------------------|--------------------------------------------------------------|---------------------------------------------------------------------------------------------|-------------|
-| **headBackgroundColor** | This is the background color of the table of contents header | **String** - CSS [color](https://developer.mozilla.org/fr/docs/Web/CSS/color)               | *"#1c1c1c"* |
-| **headTextColor**       | This is the text color of the table of contents header       | **String** - CSS [color](https://developer.mozilla.org/fr/docs/Web/CSS/color)               | *"#fff"*    |
-| **headLinkColor**       | This is the link color of the table of contents header       | **String** - CSS [color](https://developer.mozilla.org/fr/docs/Web/CSS/color)               | *"#ADD8E6"* |
-| **bodyBackgroundColor** | This is the background color of the table of contents body   | **String** - CSS [color](https://developer.mozilla.org/fr/docs/Web/CSS/color)               | *"#f5f5f5"* |
-| **bodyLinkColor**       | This is the links color of the table of contents body        | **String** - CSS [color](https://developer.mozilla.org/fr/docs/Web/CSS/color)               | *"#000"*    |
-| **borderStyle**         | This is the border style of the table of contents container  | **String** - CSS [border-style](https://developer.mozilla.org/fr/docs/Web/CSS/border-style) | *"solid"*   |
-| **borderColor**         | This is the border color of the table of contents container  | **String** - CSS [border-color](https://developer.mozilla.org/fr/docs/Web/CSS/border-color) | *"#000"*    |
-| **borderWidth**         | This is the border width of the table of contents container  | **String** - CSS [border-width](https://developer.mozilla.org/fr/docs/Web/CSS/border-width) | *"2px"*     |
+| Option                  | Description                                                  | Type                                                                                | Default     |
+|-------------------------|--------------------------------------------------------------|-------------------------------------------------------------------------------------|-------------|
+| **headBackgroundColor** | This is the background color of the table of contents header | **String** - [CSS color](https://www.w3schools.com/colors/default.asp)              | *"#1c1c1c"* |
+| **headTextColor**       | This is the text color of the table of contents header       | **String** - [CSS color](https://www.w3schools.com/colors/default.asp)              | *"#fff"*    |
+| **headLinkColor**       | This is the link color of the table of contents header       | **String** - [CSS color](https://www.w3schools.com/colors/default.asp)              | *"#ADD8E6"* |
+| **bodyBackgroundColor** | This is the background color of the table of contents body   | **String** - [CSS color](https://www.w3schools.com/colors/default.asp)              | *"#f5f5f5"* |
+| **bodyLinkColor**       | This is the links color of the table of contents body        | **String** - [CSS color](https://www.w3schools.com/colors/default.asp)              | *"#000"*    |
+| **borderStyle**         | This is the border style of the table of contents container  | **String** - [CSS border-style](https://www.w3schools.com/css/css_border_sides.asp) | *"solid"*   |
+| **borderColor**         | This is the border color of the table of contents container  | **String** - [CSS border-color](https://www.w3schools.com/css/css_border_color.asp) | *"#000"*    |
+| **borderWidth**         | This is the border width of the table of contents container  | **String** - [CSS border-width](https://www.w3schools.com/css/css_border_sides.asp) | *"2px"*     |
 
 
 ## Change the content
