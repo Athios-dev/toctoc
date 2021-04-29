@@ -87,4 +87,4 @@ var options = {
 
 
 ## 👀 Demo
-You can download [here](https://github.com/ThibaudArros/toctoc/blob/master/demo.html) a demo of this plugin.
+You can download [here](https://thibaudarros.github.io/toctoc/demo.html) a demo of this plugin.
