@@ -1,17 +1,40 @@
-# toctoc
-A jQuery plugin to automatically add a table of contents on a website page. It only weighs 4Ko! 
+# Toctoc
+👉 A jQuery plugin to automatically add a table of contents on a website page.
+🚀 It only weighs 4Ko! 
+
+## 🤔 About
+
+### Tools
+🐙 Github 💻 VS Code 🧰 jQuery
+
+### Languages
+🟠 HTML 🔵 CSS 🟡 JavaScript
 
 ## 📥 Getting started
-Download [toctoc.js](https://github.com/ThibaudArros/toctoc/blob/master/toctoc.js) (3Ko) and [toctoc.css](https://github.com/ThibaudArros/toctoc/blob/master/toctoc.css) (1Ko).
 
-## 📑 Usage
-### Include jQuery
+### Prerequisites
 Get the latest version of jQuery on [jquery.com](https://code.jquery.com).
 
-### Include toctoc.css and toctoc.js
+### Installation
+Download the following files:
+ * [toctoc.css](https://github.com/ThibaudArros/toctoc/blob/master/toctoc.css)
+ * [toctoc.js](https://github.com/ThibaudArros/toctoc/blob/master/toctoc.js)
+
+## 📑 Usage
+
+### Includes
+
+#### Styles
 ```html
-<link rel="stylesheet" href="toctoc.css">
-<script src="toctoc.js"></script>
+<link rel="stylesheet" href="path-to/toctoc.css">
+```
+
+#### Scripts
+```html
+<!-- Inside the <head> -->
+<script src="path-to/jquery.js"></script>
+<!-- At the end of the <body> -->
+<script src="path-to/toctoc.js"></script>
 ```
 
 ### Call the plugin
@@ -32,7 +55,7 @@ $(document).ready(function() {
 });
 ```
 
-## Global settings
+### Global
 ```javascript
 var options = {
     minimized: false,
@@ -45,8 +68,7 @@ var options = {
 | **minimized** | Define if the table of contents is open or not         | **Boolean**                                                                      | *true*   |
 | **target**    | Define in which container titles tag should be crawled | **String** - [CSS selector](https://www.w3schools.com/cssref/css_selectors.asp)  | *"body"* |
 
-
-## Change the style
+### Style
 ```javascript
 var options = {
     headBackgroundColor: '#e7e7e7',
@@ -71,8 +93,7 @@ var options = {
 | **borderColor**         | This is the border color of the table of contents container  | **String** - [CSS border-color](https://www.w3schools.com/css/css_border_color.asp) | *"#000"*    |
 | **borderWidth**         | This is the border width of the table of contents container  | **String** - [CSS border-width](https://www.w3schools.com/css/css_border_sides.asp) | *"2px"*     |
 
-
-## Change the content
+### Content
 ```javascript
 var options = {
     headText: 'My title',
@@ -85,6 +106,8 @@ var options = {
 | **headText**     | This is the text of the table of contents header                            | **String**               | *"Table of contents"* |
 | **headLinkText** | This is the link text of the table of contents header (to show and hide it) | **Array** (of 2 strings) | *["show", "hide"]*    |
 
-
 ## 👀 Demo
-You can download [here](https://thibaudarros.github.io/toctoc/demo.html) a demo of this plugin.
+You can see [here](https://thibaudarros.github.io/toctoc/demo.html) a demo of this plugin.
+
+***
+**Made with 💛 by [Thibaud d'Arros](https://github.com/ThibaudArros)**
