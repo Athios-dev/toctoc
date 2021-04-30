@@ -58,14 +58,14 @@ $(document).ready(function() {
 ### Global
 ```javascript
 var options = {
-    minimized: false,
+    opened: false,
     target: '#article'
 }
 ```
 
 | Option        | Description                                            | Type                                                                             | Default  |
 |---------------|--------------------------------------------------------|----------------------------------------------------------------------------------|----------|
-| **minimized** | Define if the table of contents is open or not         | **Boolean**                                                                      | *true*   |
+| **opened** | Define if the table of contents is opened or not         | **Boolean**                                                                      | *false*   |
 | **target**    | Define in which container titles tag should be crawled | **String** - [CSS selector](https://www.w3schools.com/cssref/css_selectors.asp)  | *"body"* |
 
 ### Style

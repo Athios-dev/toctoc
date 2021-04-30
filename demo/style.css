@@ -6,6 +6,8 @@
 * { box-sizing: border-box; }
 a { text-decoration: none; }
 
+h2, h3 { text-align: left; }
+
 body {
   margin: 0;
   background: var(--color-light);

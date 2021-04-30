@@ -1,6 +1,7 @@
 (function($) {
   $.toctoc = function(options) {
 
+    // ⚙️ SETTINGS
     var settings = $.extend({
       headBackgroundColor: '#1c1c1c',
       headTextColor: '#fff',
@@ -11,64 +12,71 @@
       borderColor: '#000',
       borderWidth: '2px',
       headText: 'Table of contents',
-      headLinkText: ['show', 'hide'],
-      minimized: true,
+      headLinkText: {
+        'show': 'show',
+        'hide': 'close'
+      },
+      opened: false,
       target: 'body'
     }, options);
     
-    const container = $('#toctoc');
-    const head = $("<div id='toctoc-head'></div>");
-    const body = $("<div id='toctoc-body'></div>");
+    // 🎯 DOM ITEMS
+    const toc = $('#toctoc');
+    const tocHead = $("<div></div>").attr("id", "toctoc-head");
+    const tocHeadToggler = $("<a></a>").attr("href", "#");
+    const tocHeadText = $("<span></span>").text(settings.headText);
+    const tocBody = $("<div></div>").attr("id", "toctoc-body");
 
-    createToc();
-    toggleLink();
-
-    $('#toctoc #toggle').on('click', (e) => {
-      e.preventDefault();
-      toggleLink();
-    });
-
-    function createToc() {
-      head.append("<p><span>" + settings.headText + "</span> [<a href='#' id='toggle'></a>]</p>");
+    // ▶️ INITIALISATION
+    init();
+    function init() {
+      tocHead.append(tocHeadText).append(tocHeadToggler);
       let titles = settings.target + " h2, " + settings.target + " h3, " + settings.target + " h4, " + settings.target + " h5, " + settings.target + " h6";
       $(titles).each(function(i) {
         let tag = $(this).prop('tagName').toLowerCase();
         let content = $(this).html();
-        let anchor = 'toctoc-' + i;
+        let anchor = 'toctoc-' + (i + 1);
         $(this).attr('id', anchor);
-        body.append("<a href='#"+anchor+"'><p class='link link-"+tag+"'>"+content+"</p></a>");
+        tocBody.append("<a href='#"+anchor+"'><p class='link link-"+tag+"'>"+content+"</p></a>");
       });
-
-      container.append(head);
-      container.append(body);
-
-      customize();
+      toc.append(
+        tocHead.css({
+          'background-color': settings.headBackgroundColor,
+          'color': settings.headTextColor
+        })
+      ).append(
+        tocBody.css({
+          'background-color': settings.bodyBackgroundColor,
+          'border-style': settings.borderStyle,
+          'border-color': settings.borderColor,
+          'border-width': settings.borderWidth
+        })
+      );
+      tocHeadToggler.css({'color': settings.headLinkColor});
+      $('#toctoc-body a').css({'color': settings.bodyLinkColor});  
+      loadVisibility();
     }
 
-    function customize() {
-      head.css({
-        'background-color': settings.headBackgroundColor,
-        'color': settings.headTextColor
-      });
-      body.css({
-        'background-color': settings.bodyBackgroundColor,
-        'border-style': settings.borderStyle,
-        'border-color': settings.borderColor,
-        'border-width': settings.borderWidth
-      });
-      $('#toctoc-head a').css({'color': settings.headLinkColor});
-      $('#toctoc-body a').css({'color': settings.bodyLinkColor});
+    // 👀 EVENT LISTENER
+    tocHeadToggler.on('click', (e) => {
+      e.preventDefault();
+      changeVisibility();
+    });
+
+    // ⚙️ CHANGE VISIBILITY
+    function changeVisibility() { 
+      settings.opened ? settings.opened = false : settings.opened = true;
+      loadVisibility();
     }
-    
-    function toggleLink() { 
-      if (settings.minimized) {
-        settings.minimized = false;
-        $('#toctoc-head a').text(settings.headLinkText[0]);
-        body.addClass('hidden');
+
+    // ⚙️ LOAD VISIBILITY
+    function loadVisibility() { 
+      if (settings.opened) {
+        tocHeadToggler.text(settings.headLinkText['hide']);
+        tocBody.removeAttr('hidden');
       } else {
-        settings.minimized = true;
-        $('#toctoc-head a').text(settings.headLinkText[1]);
-        body.removeClass('hidden');
+        tocHeadToggler.text(settings.headLinkText['show']);
+        tocBody.attr('hidden', '');
       }
     }
     

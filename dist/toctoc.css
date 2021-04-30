@@ -1,22 +1,20 @@
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+body { scroll-behavior: smooth; }
 
-#toctoc { width: 100%; margin-bottom: 2rem; }
+#toctoc { width: 100%; margin-bottom: 2rem; text-align: left; }
 #toctoc a { text-decoration: none; }
 
 #toctoc #toctoc-head {
   padding: .8rem 1rem;
-  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
 }
-#toctoc #toctoc-head span { font-weight: bold; }
-#toctoc #toctoc-head p { margin: 0; }
-#toctoc #toctoc-head a:hover { opacity: .9; }
+#toctoc #toctoc-head a:hover { opacity: .9;  }
 
-#toctoc #toctoc-body { padding: .5rem 1rem; font-size: 1rem; text-align: left; }
+#toctoc #toctoc-body { padding: .5rem 1rem; font-size: 1rem; }
 #toctoc #toctoc-body .link { margin: .4rem 0; }
-#toctoc #toctoc-body.hidden { display: none; }
 
-#toctoc #toctoc-body a:hover { font-weight: bold; }
+#toctoc #toctoc-body a { display: flex; align-items: center; gap: .4rem; }
+#toctoc #toctoc-body a:hover::after { content: "👈"; }
 #toctoc #toctoc-body .link-h3 { padding-left: 1rem; }
 #toctoc #toctoc-body .link-h4 { padding-left: 2rem; }
 #toctoc #toctoc-body .link-h5 { padding-left: 3rem; }
