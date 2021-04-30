@@ -1,18 +1,18 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 
-#toctoc { width: 100%; margin-bottom: 3rem; }
+#toctoc { width: 100%; margin-bottom: 2rem; }
 #toctoc a { text-decoration: none; }
 
 #toctoc #toctoc-head {
   padding: .8rem 1rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 #toctoc #toctoc-head span { font-weight: bold; }
 #toctoc #toctoc-head p { margin: 0; }
 #toctoc #toctoc-head a:hover { opacity: .9; }
 
-#toctoc #toctoc-body { padding: .5rem 1rem; font-size: 1rem; }
+#toctoc #toctoc-body { padding: .5rem 1rem; font-size: 1rem; text-align: left; }
 #toctoc #toctoc-body .link { margin: .4rem 0; }
 #toctoc #toctoc-body.hidden { display: none; }
 

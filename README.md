@@ -1,5 +1,5 @@
 # Toctoc
-👉 A jQuery plugin to automatically add a table of contents on a website page.<br>
+👉 A jQuery plugin to automatically add a table of contents on a web page.<br>
 🚀 It only weighs 4Ko! 
 
 ## 🤔 About

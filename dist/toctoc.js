@@ -23,7 +23,8 @@
     createToc();
     toggleLink();
 
-    $('#toctoc #toggle').on('click', () => {
+    $('#toctoc #toggle').on('click', (e) => {
+      e.preventDefault();
       toggleLink();
     });
 
@@ -59,7 +60,7 @@
       $('#toctoc-body a').css({'color': settings.bodyLinkColor});
     }
     
-    function toggleLink() {
+    function toggleLink() { 
       if (settings.minimized) {
         settings.minimized = false;
         $('#toctoc-head a').text(settings.headLinkText[0]);
