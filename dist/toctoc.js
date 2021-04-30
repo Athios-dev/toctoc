@@ -12,10 +12,7 @@
       borderColor: '#000',
       borderWidth: '2px',
       headText: 'Table of contents',
-      headLinkText: {
-        'show': 'show',
-        'hide': 'close'
-      },
+      headLinkText: ['show', 'close'],
       opened: false,
       target: 'body'
     }, options);
@@ -72,10 +69,10 @@
     // ⚙️ LOAD VISIBILITY
     function loadVisibility() { 
       if (settings.opened) {
-        tocHeadToggler.text(settings.headLinkText['hide']);
+        tocHeadToggler.text(settings.headLinkText[1]);
         tocBody.removeAttr('hidden');
       } else {
-        tocHeadToggler.text(settings.headLinkText['show']);
+        tocHeadToggler.text(settings.headLinkText[0]);
         tocBody.attr('hidden', '');
       }
     }
