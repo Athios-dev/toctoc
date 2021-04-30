@@ -6,8 +6,6 @@
 * { box-sizing: border-box; }
 a { text-decoration: none; }
 
-h2, h3 { text-align: left; }
-
 body {
   margin: 0;
   background: var(--color-light);
@@ -32,6 +30,16 @@ main {
   margin: 0 auto;
   box-shadow: 5px 5px 20px rgba(0,0,0,.1);
   text-align: center;
+}
+
+.content {
+  max-height: 25vh;
+  overflow-y: scroll;
+  text-align: left;
+}
+.content a { 
+  color: var(--color-dark);
+  font-weight: bold;
 }
 
 .button {

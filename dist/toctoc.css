@@ -10,10 +10,17 @@ body { scroll-behavior: smooth; }
 }
 #toctoc #toctoc-head a:hover { opacity: .9;  }
 
-#toctoc #toctoc-body { padding: .5rem 1rem; font-size: 1rem; }
-#toctoc #toctoc-body .link { margin: .4rem 0; }
+#toctoc #toctoc-body {
+  padding: .5rem 1rem;
+  font-size: 1rem;
+}
+#toctoc #toctoc-body .link { margin: .2rem 0; }
 
-#toctoc #toctoc-body a { display: flex; align-items: center; gap: .4rem; }
+#toctoc #toctoc-body a {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
 #toctoc #toctoc-body a:hover::after { content: "👈"; }
 #toctoc #toctoc-body .link-h3 { padding-left: 1rem; }
 #toctoc #toctoc-body .link-h4 { padding-left: 2rem; }
