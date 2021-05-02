@@ -1,7 +1,7 @@
 (function($) {
   $.toctoc = function(options) {
 
-    // ⚙️ SETTINGS
+    // 🎛️ SETTINGS
     var settings = $.extend({
       headBackgroundColor: '#1c1c1c',
       headTextColor: '#fff',
@@ -54,14 +54,14 @@
       loadVisibility();
     }
 
-    // 👀 EVENT LISTENER
+    // 👀 EVENT LISTENER (click)
     tocHeadToggler.on('click', (e) => {
       e.preventDefault();
-      changeVisibility();
+      toggleVisibility();
     });
 
-    // ⚙️ CHANGE VISIBILITY
-    function changeVisibility() { 
+    // ⚙️ TOGGLE VISIBILITY
+    function toggleVisibility() { 
       settings.opened ? settings.opened = false : settings.opened = true;
       loadVisibility();
     }

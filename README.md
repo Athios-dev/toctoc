@@ -107,7 +107,4 @@ var options = {
 | **headLinkText** | This is the link text of the table of contents header (to show and hide it) | **Array** (of 2 strings) | *["show", "hide"]*    |
 
 ## 👀 Demo
-You can see [here](https://thibaudarros.github.io/toctoc/demo.html) a demo of this plugin.
-
-***
-**Made with 💛 by [Thibaud d'Arros](https://github.com/ThibaudArros)**
+You can see [here](https://athios-dev.github.io/toctoc/public) a demo of this plugin.

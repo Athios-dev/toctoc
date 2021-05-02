@@ -33,9 +33,10 @@ main {
 }
 
 .content {
-  max-height: 25vh;
+  max-height: 20vh;
   overflow-y: scroll;
   text-align: left;
+  margin-bottom: 20px;
 }
 .content a { 
   color: var(--color-dark);
