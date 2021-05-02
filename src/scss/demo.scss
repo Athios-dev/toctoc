@@ -37,10 +37,10 @@ main {
   overflow-y: scroll;
   text-align: left;
   margin-bottom: 20px;
-}
-.content a { 
-  color: var(--color-dark);
-  font-weight: bold;
+  a { 
+    color: var(--color-dark);
+    font-weight: bold;
+  }
 }
 
 .button {
@@ -49,10 +49,10 @@ main {
   color: #333;
   border: solid #333 2px;
   border-radius: 4px;
-}
-.button:hover {
-  color: #fff;
-  background-color: #333;
+  &:hover {
+    color: #fff;
+    background-color: #333;
+  }
 }
 
 footer {
@@ -61,6 +61,9 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  p { margin: 0; }
+  a {
+    color: #fff;
+    border-bottom: #fff dotted 2px;
+  }
 }
-footer p { margin: 0; }
-footer a { color: #fff; border-bottom: #fff dotted 2px; }

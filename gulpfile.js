@@ -49,6 +49,7 @@ function workflowJS() {
     .pipe(gulp.dest(paths.outputs.js));
 }
 
+// 👀 WATCHING CHANGES
 exports.default = function() {
     gulp.watch('./src/scss/**/*.scss', workflowCSS);
     gulp.watch('./src/js/**/*.js', workflowJS);
