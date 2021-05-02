@@ -1,6 +1,6 @@
 # Toctoc
 👉 A jQuery plugin to automatically add a table of contents on a web page.<br>
-🚀 It only weighs 4Ko! 
+🚀 It only weighs 3Ko! 
 
 ## 🤔 About
 
@@ -17,8 +17,8 @@ Get the latest version of jQuery on [jquery.com](https://code.jquery.com).
 
 ### Installation
 Download the following files:
- * [toctoc.css](https://github.com/ThibaudArros/toctoc/blob/master/toctoc.css)
- * [toctoc.js](https://github.com/ThibaudArros/toctoc/blob/master/toctoc.js)
+ * [toctoc.min.css](https://github.com/Athios-dev/toctoc/blob/master/public/css/toctoc.min.css)
+ * [toctoc.min.js](https://github.com/Athios-dev/toctoc/blob/master/public/js/toctoc.min.js)
 
 ## 📑 Usage
 
@@ -26,15 +26,15 @@ Download the following files:
 
 #### Styles
 ```html
-<link rel="stylesheet" href="path-to/toctoc.css">
+<link rel="stylesheet" href="path-to/toctoc.min.css">
 ```
 
 #### Scripts
 ```html
 <!-- Inside the <head> -->
-<script src="path-to/jquery.js"></script>
+<script src="path-to/jquery.min.js"></script>
 <!-- At the end of the <body> -->
-<script src="path-to/toctoc.js"></script>
+<script src="path-to/toctoc.min.js"></script>
 ```
 
 ### Call the plugin
