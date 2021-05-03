@@ -17,8 +17,8 @@ Get the latest version of jQuery on [jquery.com](https://code.jquery.com).
 
 ### Installation
 Download the following files:
- * [toctoc.min.css](https://github.com/Athios-dev/toctoc/blob/master/public/css/toctoc.min.css)
- * [toctoc.min.js](https://github.com/Athios-dev/toctoc/blob/master/public/js/toctoc.min.js)
+* [toctoc.min.css](https://github.com/Athios-dev/toctoc/blob/master/public/css/toctoc.min.css)
+* [toctoc.min.js](https://github.com/Athios-dev/toctoc/blob/master/public/js/toctoc.min.js)
 
 ## 📑 Usage
 

@@ -13,7 +13,7 @@ var cleanCSS = require('gulp-clean-css');
 // https://github.com/terinjokes/gulp-uglify/
 var uglify = require('gulp-uglify');
 
-// 📮 PATHS
+// 📁 PATHS
 var paths = {
     inputs: {
         css: './src/scss/**/*.scss',
@@ -34,7 +34,7 @@ function workflowCSS() {
         }).on('error', sass.logError))
         .pipe(autoprefixer())
         .pipe(cleanCSS({compatibility: 'ie8', debug: true}, (details) => {
-            console.log(`${details.name}: compression à ${ Math.round(100 - details.stats.minifiedSize / details.stats.originalSize * 100) }% (${ details.stats.originalSize / 1000 }Ko --> ${ details.stats.minifiedSize / 1000 }Ko)`);
+            console.log(`${details.name}: ${ Math.round(100 - details.stats.minifiedSize / details.stats.originalSize * 100) }% compressed (${ details.stats.originalSize / 1000 }Ko --> ${ details.stats.minifiedSize / 1000 }Ko)`);
         }))
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest(paths.outputs.css));

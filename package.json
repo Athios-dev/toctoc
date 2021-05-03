@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ThibaudArros/toctoc.git"
+    "url": "git+https://github.com/Athios-dev/toctoc.git"
   },
   "author": "Athios",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ThibaudArros/toctoc/issues"
+    "url": "https://github.com/Athios-dev/toctoc/issues"
   },
-  "homepage": "https://github.com/ThibaudArros/toctoc#readme",
+  "homepage": "https://github.com/Athios-dev/toctoc#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
