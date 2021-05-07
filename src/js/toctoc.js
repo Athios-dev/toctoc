@@ -31,7 +31,7 @@
       let titles = settings.target + " h2, " + settings.target + " h3, " + settings.target + " h4, " + settings.target + " h5, " + settings.target + " h6";
       $(titles).each(function(i) {
         let tag = $(this).prop('tagName').toLowerCase();
-        let content = $(this).html();
+        let content = $(this).text();
         let anchor = 'toctoc-' + (i + 1);
         $(this).attr('id', anchor);
         tocBody.append("<a href='#"+anchor+"'><p class='link link-"+tag+"'>"+content+"</p></a>");
