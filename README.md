@@ -37,6 +37,11 @@ Download the following files:
 <script src="path-to/toctoc.min.js"></script>
 ```
 
+### Define your TOC container
+```html
+<div id="toctoc"></div>
+```
+
 ### Call the plugin
 ```javascript
 $(document).ready(function() {
