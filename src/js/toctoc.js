@@ -14,7 +14,8 @@
       headText: 'Table of contents',
       headLinkText: ['show', 'close'],
       opened: false,
-      target: 'body'
+      target: 'body',
+      smooth: true
     }, options);
     
     // 🎯 DOM ITEMS
@@ -29,6 +30,7 @@
     function init() {
       tocHead.append(tocHeadText).append(tocHeadToggler);
       let titles = settings.target + " h2, " + settings.target + " h3, " + settings.target + " h4, " + settings.target + " h5, " + settings.target + " h6";
+      if (settings.smooth) $(settings.target).addClass('smooth-scroll');
       $(titles).each(function(i) {
         let tag = $(this).prop('tagName').toLowerCase();
         let content = $(this).text();

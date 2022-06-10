@@ -7,7 +7,7 @@ var babel = require('gulp-babel');
 // https://github.com/hparra/gulp-rename
 var rename = require('gulp-rename');
 // https://github.com/dlmanning/gulp-sass
-var sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 // https://github.com/jakubpawlowicz/clean-css
 var cleanCSS = require('gulp-clean-css');
 // https://github.com/terinjokes/gulp-uglify/

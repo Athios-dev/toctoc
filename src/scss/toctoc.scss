@@ -1,4 +1,6 @@
-body { scroll-behavior: smooth; }
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
 
 #toctoc {
   width: 100%;
@@ -11,7 +13,7 @@ body { scroll-behavior: smooth; }
     a:hover { opacity: .9;  }
   }
   #toctoc-body {
-    padding: .5rem 1rem;
+  padding: .5rem 1rem;
     font-size: 1rem;
     .link { margin: .2rem 0; }
     a {
@@ -27,3 +29,4 @@ body { scroll-behavior: smooth; }
   }
   a { text-decoration: none; }
 }
+
