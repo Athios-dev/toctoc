@@ -64,14 +64,16 @@ $(document).ready(function() {
 ```javascript
 var options = {
     opened: false,
-    target: '#article'
+    target: '#article',
+    smooth: true
 }
 ```
 
 | Option        | Description                                            | Type                                                                             | Default  |
 |---------------|--------------------------------------------------------|----------------------------------------------------------------------------------|----------|
-| **opened** | Define if the table of contents is opened or not         | **Boolean**                                                                      | *false*   |
+| **opened**    | Define if the table of contents is opened or not       | **Boolean**                                                                      | *false*  |
 | **target**    | Define in which container titles tag should be crawled | **String** - [CSS selector](https://www.w3schools.com/cssref/css_selectors.asp)  | *"body"* |
+| **smooth**    | Define if the movement to the title has to be smooth   | **Boolean**                                                                      | *true*   |
 
 ### Style
 ```javascript
